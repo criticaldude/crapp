@@ -11,6 +11,17 @@
   <h3>My Campaigns</h3>
 
   <ion-list>
+
+      <ion-item *ngFor="let campaign of campaigns">
+          <ion-thumbnail item-start>
+            <img src="https://530adc3f-a-62cb3a1a-s-sites.googlegroups.com/site/misimagenesweb/mis_imagenes/The_Rise_of_Tiamat_tn.jpg?attachauth=ANoY7cpe13J55z4sbebf8gbvJ87mLwn4LyaShPGbpQkkgSUJA3Ue0fJ5fms0C0u5FVvho2BSaranObxs-RixTAm8zHNl30OnfEpBDMbBXfpWMcwWUYfCU7EuvxQC32iEttWxbDgHWHywIADgrm727wFYjfj1uL6NgG_gnMrGN-HfJmf8DDonFEYx5JFqdkWnl1zDkD46AXO8CIvGqKyW8Xfd-OYLO4AXgSqyrJTdKXxLLlKBddkQzSz15fIowSKrnaojsUJUG0EM&attredirects=0">
+          </ion-thumbnail>
+          <h2>{{campaign.name}}</h2>
+          <p>{{campaign.party}}</p>
+          <button ion-button clear item-end>View</button>
+        </ion-item>
+
+        <!--
     <ion-item>
       <ion-thumbnail item-start>
         <img src="https://530adc3f-a-62cb3a1a-s-sites.googlegroups.com/site/misimagenesweb/mis_imagenes/The_Rise_of_Tiamat_tn.jpg?attachauth=ANoY7cpe13J55z4sbebf8gbvJ87mLwn4LyaShPGbpQkkgSUJA3Ue0fJ5fms0C0u5FVvho2BSaranObxs-RixTAm8zHNl30OnfEpBDMbBXfpWMcwWUYfCU7EuvxQC32iEttWxbDgHWHywIADgrm727wFYjfj1uL6NgG_gnMrGN-HfJmf8DDonFEYx5JFqdkWnl1zDkD46AXO8CIvGqKyW8Xfd-OYLO4AXgSqyrJTdKXxLLlKBddkQzSz15fIowSKrnaojsUJUG0EM&attredirects=0">
@@ -27,6 +38,8 @@
       <p>Interax</p>
       <button ion-button clear item-end>View</button>
     </ion-item>
+  -->
+
   </ion-list>
 
   <button ion-button secondary menuToggle>New Campaign</button>
