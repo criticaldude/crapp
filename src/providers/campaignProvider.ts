@@ -11,11 +11,11 @@ export class CampaignProvider{
 
     constructor(private http: HttpClient){}
 
-    getAllCampaigns():Promise<Array<Campaign>>{
+    public getAllCampaigns():Promise<Array<Campaign>>{
         return new Promise(resolve => { resolve(this.map); });
     }
 
-    getCampaign(id: Number){
+    public getCampaign(id: Number): Promise<Campaign>{
         return new Promise(resolve => {
             this.map.forEach(campaign => {
                 if(campaign.id === id) resolve(campaign);

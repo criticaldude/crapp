@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import { IonicStorageModule } from '@ionic/storage';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -15,33 +16,37 @@ import { CampaignDetailPage } from '../pages/campaigns/detail/campaign.detail';
 
 //Providers
 import { CampaignProvider } from '../providers/campaignProvider';
+import { CharacterProvider } from '../providers/characterProvider';
+
+const pages = [
+  HomePage,
+  ListPage,
+  CampaignListPage,
+  CampaignDetailPage
+]
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
-    ListPage,
-    CampaignListPage,
-    CampaignDetailPage
+    ...pages
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    HttpClientModule
+    HttpClientModule,
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,
-    ListPage,
-    CampaignListPage,
-    CampaignDetailPage
+    ...pages
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    CampaignProvider
+    CampaignProvider,
+    CharacterProvider
   ]
 })
 export class AppModule {}
