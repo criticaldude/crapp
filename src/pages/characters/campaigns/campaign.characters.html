@@ -3,20 +3,21 @@
       <button ion-button menuToggle>
         <ion-icon name="menu"></ion-icon>
       </button>
-      <ion-title>List</ion-title>
+      <ion-title>Characters</ion-title>
     </ion-navbar>
   </ion-header>
   
   <ion-content>
     <ion-list>
-      <button ion-item *ngFor="let character of characters" (click)="characterTapped($event, item)">
+      <button ion-item *ngFor="let character of characters" (click)="characterTapped($event, character)">
         <!--<ion-icon [name]="item.icon" item-start></ion-icon>-->
         {{character.name}}
         <div class="item-note" item-end>
-          {{character.class}} {[{character}]}
+          {{character.formatterClasses}}
         </div>
       </button>
     </ion-list>
+
     <div *ngIf="selectedItem" padding>
       You navigated here from <b>{{selectedItem.title}}</b>
     </div>

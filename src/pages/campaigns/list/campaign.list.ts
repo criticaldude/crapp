@@ -25,8 +25,8 @@ export class CampaignListPage {
   public openCampaign(campaign:Campaign){
     this.navCtrl.setRoot(CampaignDetailPage, {"campaign": campaign})
       .then(res => {
-        this.events.publish("campaign:open");
-      });
+        this.events.publish("campaign:open", {"campaign": campaign});
+    });
   }
 
 }

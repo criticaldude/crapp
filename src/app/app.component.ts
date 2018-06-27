@@ -8,7 +8,9 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { CampaignListPage } from '../pages/campaigns/list/campaign.list';
 import { CampaignDetailPage } from '../pages/campaigns/detail/campaign.detail';
+import { CampaignCharactersPage } from '../pages/characters/campaigns/campaign.characters';
 import { Campaign } from '../providers/campaignProvider';
+
 
 @Component({
   templateUrl: 'app.html'
@@ -45,7 +47,7 @@ export class MyApp {
   private getCampaignPages(){
     return [
       { title: 'Home', component: CampaignDetailPage },
-      { title: 'Characters', component: CampaignListPage }
+      { title: 'Characters', component: CampaignCharactersPage }
     ];
   }
 
@@ -65,8 +67,12 @@ export class MyApp {
   }
 
   public closeCampaign(){
-    this.events.publish("campaign:close");
-    this.openPage(HomePage);
+    this.nav.setRoot(HomePage).then(res => {
+      setTimeout(()=>{
+        this.events.publish("campaign:close");
+      }, 1000);
+      
+    });
   }
 
   private initializeEvents(){
@@ -75,8 +81,9 @@ export class MyApp {
   }
 
   private subscribeOpenCampaignEvent(){
-    this.events.subscribe('campaign:open', (campaign : Campaign) => {
-      this.storage.set("campaign", campaign);
+    this.events.subscribe('campaign:open', (data) => {
+      console.log("set campaign", data);
+      this.storage.set("campaign", data.campaign);
       this.pages = this.getCampaignPages();
       this.isCampaignOpen = true;
     });

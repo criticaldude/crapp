@@ -13,6 +13,7 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { CampaignListPage } from '../pages/campaigns/list/campaign.list';
 import { CampaignDetailPage } from '../pages/campaigns/detail/campaign.detail';
+import { CampaignCharactersPage } from '../pages/characters/campaigns/campaign.characters';
 
 //Providers
 import { CampaignProvider } from '../providers/campaignProvider';
@@ -22,7 +23,8 @@ const pages = [
   HomePage,
   ListPage,
   CampaignListPage,
-  CampaignDetailPage
+  CampaignDetailPage,
+  CampaignCharactersPage
 ]
 
 @NgModule({
