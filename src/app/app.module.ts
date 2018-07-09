@@ -6,6 +6,7 @@ import { IonicStorageModule } from '@ionic/storage';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { HttpClientModule } from '@angular/common/http'; 
+import { HeaderColor } from '@ionic-native/header-color';
 
 //Pages
 import { MyApp } from './app.component';
@@ -18,6 +19,7 @@ import { CampaignCharactersPage } from '../pages/characters/campaigns/campaign.c
 //Providers
 import { CampaignProvider } from '../providers/campaignProvider';
 import { CharacterProvider } from '../providers/characterProvider';
+
 
 const pages = [
   HomePage,
@@ -48,7 +50,14 @@ const pages = [
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     CampaignProvider,
-    CharacterProvider
+    CharacterProvider,
+    HeaderColor
   ]
+
+  
 })
-export class AppModule {}
+
+
+export class AppModule {
+
+}

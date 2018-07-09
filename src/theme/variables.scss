@@ -24,6 +24,7 @@ $app-direction: ltr;
 
 
 
+$button-ios-border-radius: 30px;
 
 // Named Color Variables
 // --------------------------------------------------
@@ -34,17 +35,24 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
+  primary:    #002d3f,
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  twitter: (
+    base: #002d3f,
+    contrast: #ffffff,
+  )
 );
+
+
 
 
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
+
 
 
 
@@ -86,3 +94,18 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+
+@font-face {
+  font-family: 'IM Fell English SC';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/IMFeEN.ttf');
+}
+
+$font-family-base:"IM Fell English SC";
+
+body{
+  font-family: "IM Fell English SC" !important;
+  font-weight: 400 !important;
+}
