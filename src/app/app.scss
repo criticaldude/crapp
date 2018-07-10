@@ -16,7 +16,6 @@
 // automatically applied to the <body> element in the app.
 
 
-
 ion-app {
     font-family: "IM Fell English SC" !important;
 }
@@ -44,7 +43,7 @@ ion-header {
     }
 
 .goldentexttitle {
-        color:rgb(14, 68, 119);
+        color:rgb(14, 68, 119) !important;
           }
 
 
@@ -61,6 +60,12 @@ ion-header {
 
 .bg-menu {
         background-image: url('../assets/imgs/backmenu.jpg');
+        background-size: cover;
+        background-position: center;
+    } 
+
+    .bg-menu2 {
+        background-image: url('../assets/imgs/backmenu2.jpg');
         background-size: cover;
         background-position: center;
     } 

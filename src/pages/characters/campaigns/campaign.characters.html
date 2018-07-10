@@ -9,7 +9,7 @@
   
   <ion-content class="bg-image">
     <ion-list>
-      <button ion-item *ngFor="let character of characters" (click)="characterTapped($event, character)">
+      <button class="goldentext" style="background-color: rgba(255, 255, 255, 0)" ion-item *ngFor="let character of characters" (click)="characterTapped($event, character)">
         <!--<ion-icon [name]="item.icon" item-start></ion-icon>-->
         {{character.name}}
         <div class="item-note" item-end>
