@@ -26,7 +26,7 @@ export class CampaignProvider{
 }
 
 export interface Campaign{
-    id:Number,
-    name: String,
-    party: String
+    id?:Number,
+    name?: String,
+    party?: String
 }
