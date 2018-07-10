@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
@@ -7,16 +7,16 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>My Campaigns</h3>
+<ion-content padding class="bg-image">
+  <h3 class="goldentexttitle">My Campaigns</h3>
 
   <ion-list>
-    <ion-item *ngFor="let campaign of campaigns">
+    <ion-item style="background-color: rgba(255, 255, 255, 0)" *ngFor="let campaign of campaigns">
       <ion-thumbnail item-start>
         <img src="https://530adc3f-a-62cb3a1a-s-sites.googlegroups.com/site/misimagenesweb/mis_imagenes/The_Rise_of_Tiamat_tn.jpg?attachauth=ANoY7cpe13J55z4sbebf8gbvJ87mLwn4LyaShPGbpQkkgSUJA3Ue0fJ5fms0C0u5FVvho2BSaranObxs-RixTAm8zHNl30OnfEpBDMbBXfpWMcwWUYfCU7EuvxQC32iEttWxbDgHWHywIADgrm727wFYjfj1uL6NgG_gnMrGN-HfJmf8DDonFEYx5JFqdkWnl1zDkD46AXO8CIvGqKyW8Xfd-OYLO4AXgSqyrJTdKXxLLlKBddkQzSz15fIowSKrnaojsUJUG0EM&attredirects=0">
       </ion-thumbnail>
-      <h2>{{campaign.name}}</h2>
-      <p>{{campaign.party}}</p>
+      <h2 class="goldentext">{{campaign.name}}</h2>
+      <p class="goldentexttitle">{{campaign.party}}</p>
       <button ion-button clear item-end (click)="openCampaign(campaign)">View</button>
     </ion-item>
   </ion-list>

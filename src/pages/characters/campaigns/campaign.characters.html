@@ -1,5 +1,9 @@
 <ion-header>
+<<<<<<< HEAD
   <ion-navbar>
+=======
+    <ion-navbar color="primary">
+>>>>>>> b2320477d5fa80c5a5d49cfa272091b0382c5bb9
       <button ion-button menuToggle>
         <ion-icon name="menu"></ion-icon>
       </button>
@@ -7,9 +11,9 @@
     </ion-navbar>
   </ion-header>
   
-  <ion-content>
+  <ion-content class="bg-image">
     <ion-list>
-      <button ion-item *ngFor="let character of characters" (click)="characterTapped($event, character)">
+      <button class="goldentext" style="background-color: rgba(255, 255, 255, 0)" ion-item *ngFor="let character of characters" (click)="characterTapped($event, character)">
         <!--<ion-icon [name]="item.icon" item-start></ion-icon>-->
         {{character.name}}
         <div class="item-note" item-end>

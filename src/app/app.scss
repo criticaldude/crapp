@@ -14,3 +14,58 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+
+ion-app {
+    font-family: "IM Fell English SC" !important;
+}
+
+p{
+    font-size: 20px;
+}
+
+ion-title {
+    text-align: center;
+
+}
+
+ion-button {
+    text-align: center;
+}
+
+ion-header {
+    color: a
+}
+
+.goldentext {
+    color:rgb(110, 82, 12);
+    font-size: 19px;
+    }
+
+.goldentexttitle {
+        color:rgb(14, 68, 119) !important;
+          }
+
+
+.whitetext {
+        color:rgb(255, 255, 255);
+        font-size: 19px;
+        }
+
+.bg-image {
+        background-image: url('../assets/imgs/background.jpg');
+        background-size: cover;
+        background-position: center;
+    }  
+
+.bg-menu {
+        background-image: url('../assets/imgs/backmenu.jpg');
+        background-size: cover;
+        background-position: center;
+    } 
+
+    .bg-menu2 {
+        background-image: url('../assets/imgs/backmenu2.jpg');
+        background-size: cover;
+        background-position: center;
+    } 
