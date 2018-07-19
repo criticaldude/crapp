@@ -1,0 +1,71 @@
+{
+    "containerMaterials": [
+        {"name" : "Glass",              "rollForShape": "TRUE"},
+        {"name" : "Iron",               "rollForShape": "TRUE"},
+        {"name" : "Tin",                "rollForShape": "TRUE"},
+        {"name" : "Gourd",              "rollForShape": "FALSE"},
+        {"name" : "Ceramic",            "rollForShape": "TRUE"},
+        {"name" : "Clay",               "rollForShape": "TRUE"},
+        {"name" : "Monster Body Part",  "rollForShape": "FALSE"},
+        {"name" : "Crystal",            "rollForShape": "TRUE"},
+        {"name" : "Leather",            "rollForShape": "FALSE"}
+    ],
+    "containerShapes": [
+        {"description": "Test tube",            "rollForSpecial" : "FALSE"},
+        {"description": "Small classic bottle", "rollForSpecial" : "FALSE"},
+        {"description": "Square bottle",        "rollForSpecial" : "FALSE"},
+        {"description": "Spherical",            "rollForSpecial" : "FALSE"},
+        {"description": "Ovoid",                "rollForSpecial" : "FALSE"},
+        {"description": "Flask",                "rollForSpecial" : "FALSE"},
+        {"description": "SConical",             "rollForSpecial" : "FALSE"},
+        {"description": "Decanter with handle", "rollForSpecial" : "FALSE"},
+        {"description": "Multi-faceted",        "rollForSpecial" : "FALSE"},
+        {"description": "Special Shape",        "rollForSpecial" : "TRUE"}
+    ],
+    "containerSpecialShapes":[
+        {"description": "Humanoid"},
+        {"description": "Skull"},
+        {"description": "Cluster of grapes or other fruit"},
+        {"description": "Grinning goblin face"},
+        {"description": "Plump woman"},
+        {"description": "Fist"}
+    ],
+    "containerClosures": [
+        {"description": "Cork"},
+        {"description": "Cork and sealing wax"},
+        {"description": "Wax"},
+        {"description": "Screw-on lid"},
+        {"description": "Screw-on lid with sealing wax"},
+        {"description": "Leather tied on"},
+        {"description": "Carved wooden plug"},
+        {"description": "Tree sap"},
+        {"description": "Glass cap, must be broken to be opened"},
+        {"description": "Loose metal cap"}
+    ],
+    "containerDecorations": [
+        {"description": "Holy symbol etchings"},
+        {"description": "Ribbon tied around the neck"},
+        {"description": "Feathers and beads on a string around the neck"},
+        {"description": "Painted in primary colours"},
+        {"description": "Painted with a single rune or glyph"},
+        {"description": "Wrapped in fine cord"},
+        {"description": "Marked with someone’s initials"},
+        {"description": "Small holy symbol or rune dangles from a thin cord"}
+    ],
+    "containerLabels": [
+        {"description": "Crudely painted label"},
+        {"description": "Paper label glued on"},
+        {"description": "Paper label tied on"},
+        {"description": "Container wrapped in labeled paper"},
+        {"description": "Label glued to cap"},
+        {"description": "Scrap of leather tied to container"}
+    ],
+    "containerMarkings": [
+        {"description": "Actual type of potion",                "rollForLenguage": "FALSE"},
+        {"description": "Deliberately wrong",                   "rollForLenguage": "FALSE"},
+        {"description": "General type of potion",               "rollForLenguage": "FALSE"},
+        {"description": "Simple symbol (plus, minus, sunburst, skull)", "rollForLenguage": "FALSE"},
+        {"description": "Cryptic symbol (the moon, holy symbol of a lost cult)", "rollForLenguage": "FALSE"},
+        {"description": "Name of potion in a very rare language", "rollForLenguage": "TRUE"}
+    ]
+}

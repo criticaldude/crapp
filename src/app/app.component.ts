@@ -10,6 +10,7 @@ import { CampaignListPage } from '../pages/campaigns/list/campaign.list';
 import { CampaignDetailPage } from '../pages/campaigns/detail/campaign.detail';
 import { CampaignCharactersPage } from '../pages/characters/campaigns/campaign.characters';
 import { Campaign } from '../providers/campaignProvider';
+import { MonsterListPage } from '../pages/monsters/list/monster.list';
 
 
 @Component({
@@ -47,7 +48,10 @@ export class MyApp {
   private getCampaignPages(){
     return [
       { title: 'Home', component: CampaignDetailPage },
-      { title: 'Characters', component: CampaignCharactersPage }
+      { title: 'Characters', component: CampaignCharactersPage },
+      { title: 'Monsters', component: MonsterListPage },
+      { title: 'Encounters', component: CampaignDetailPage },
+      { title: 'Cities', component: CampaignDetailPage }
     ];
   }
 

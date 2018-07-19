@@ -15,10 +15,12 @@ import { ListPage } from '../pages/list/list';
 import { CampaignListPage } from '../pages/campaigns/list/campaign.list';
 import { CampaignDetailPage } from '../pages/campaigns/detail/campaign.detail';
 import { CampaignCharactersPage } from '../pages/characters/campaigns/campaign.characters';
+import { MonsterListPage } from '../pages/monsters/list/monster.list';
 
-//Providers
+//Providerss
 import { CampaignProvider } from '../providers/campaignProvider';
 import { CharacterProvider } from '../providers/characterProvider';
+import { MonsterProvider } from '../providers/monsterProvider';
 
 
 const pages = [
@@ -26,7 +28,8 @@ const pages = [
   ListPage,
   CampaignListPage,
   CampaignDetailPage,
-  CampaignCharactersPage
+  CampaignCharactersPage,
+  MonsterListPage
 ]
 
 @NgModule({
@@ -49,9 +52,10 @@ const pages = [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
+    HeaderColor,
     CampaignProvider,
     CharacterProvider,
-    HeaderColor
+    MonsterProvider
   ]
 
   

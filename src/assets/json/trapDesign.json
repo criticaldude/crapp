@@ -1,0 +1,78 @@
+{
+    "dangers": [
+        {
+            "name": "Setback", 
+            "dc": "10-11", 
+            "atk": "+3 to +5",
+            "damageRanges": [
+                {"charLvl": "1st-4th", "damage":"1d10"},
+                {"charLvl": "5th-10th", "damage":"2d10"},
+                {"charLvl": "11th-16th", "damage":"4d10"},
+                {"charLvl": "17th-20t", "damage":"10d10"}
+            ]
+        },
+        {
+            "name": "Dangerous", 
+            "dc": "12-15", 
+            "atk": "+6 to +8",
+            "damageRanges": [
+                {"charLvl": "1st-4th", "damage":"2d10"},
+                {"charLvl": "5th-10th", "damage":"4d10"},
+                {"charLvl": "11th-16th", "damage":"10d10"},
+                {"charLvl": "17th-20t", "damage":"18d10"}
+            ]
+        },
+        {
+            "name": "Deadly", 
+            "dc": "16-20", 
+            "atk": "+9 to +12",
+            "damageRanges": [
+                {"charLvl": "1st-4th", "damage":"4d10"},
+                {"charLvl": "5th-10th", "damage":"10d10"},
+                {"charLvl": "11th-16th", "damage":"18d10"},
+                {"charLvl": "17th-20t", "damage":"24d10"}
+            ] 
+        }
+    ],
+    "triggers": [
+        "Stepped on (floor, stairs)",
+        "Moved through (doorway, hallway)",
+        "Touched (doorknob, statue)",
+        "Opened (door, treasure chest)",
+        "Looked at (mural, arcane symbol)",
+        "Moved (cart, stone block)"
+    ],
+    "effects": [
+        "Magic missiles shoot from a statue or object",
+        "Collapsing staircase creates a ramp that deposits characters into a pit at its lower end",
+        "Ceiling block falls, or entire ceiling collapses",
+        "Ceiling lowers slowly in locked room",
+        "Chute opens in floor",
+        "Clanging noise attracts nearby monsters",
+        "Touching an object triggers a disintegrate spell",
+        "Door or other object is coated with contact poison",
+        "Fire shoots out from wall, floor, or object",
+        "Touching an object triggers a flesh to stone spell",
+        "Floor collapses or is an illu sion",
+        "Vent releases gas: blinding, acidic, obscuring, paralyzing, poisonous, or sleep-inducing",
+        "Floor tiles are electrified",
+        "Glyph of warding",
+        "Huge wheeled statue rolls down corridor",
+        "Lightning bolt shoots from wal l or object",
+        "Locked room floods with water or acid",
+        "Darts shoot out of an opened chest",
+        "A weapon , suit of armor, or rug animates and attacks when touched (see 'Animated Objects' in the Monster Manual)",
+        "Pendulum, either bladed or weighted as a maul, swings across the room or hall",
+        "Hidden pit opens beneath characters (25 percent chance that a black pudding or gelatinous cube fills the bottom of the pit)",
+        "Hidden pit floods with acid or fire",
+        "Locking pit floods with water",
+        "Scything blade emerges from wall or object",
+        "Spears (possibly poisoned) spring out",
+        "Brittle stairs collapse over spikes",
+        "Thunderwave knocks characters into a pit or spikes",
+        "Steel or stone jaws restrain a character",
+        "Stone block smashes across hallway",
+        "Symbol",
+        "Walls slide together"
+    ]
+} 

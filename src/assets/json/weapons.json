@@ -1,0 +1,189 @@
+{
+    "weapons": [
+        {
+            "type": "Simple", "attack": "Melee", "name": "Club",
+            "cost": "1 sp", "damage": "1d4 (B)", "weight": 2, "subGroup": "Mace",
+            "properties": "Light"
+        },
+        {
+            "type": "Simple", "attack": "Melee", "name": "Dagger",
+            "cost": "2 gp", "damage": "1d4 (P)", "weight": 1,  "subGroup": "Knife",
+            "properties": "Finesse, Light, Thrown(20/60)"
+        },
+        {
+            "type": "Simple", "attack": "Melee", "name": "Greatclub",
+            "cost": "2 sp", "damage": "1d8 (B)", "weight": 10, "subGroup": "Mace",
+            "properties": "Two-Handed"
+        },
+        {
+            "type": "Simple", "attack": "Melee", "name": "Handaxe",
+            "cost": "5 gp", "damage": "1d6 (S)", "weight": 2,  "subGroup": "Axe",
+            "properties": "Light, Thrown(20/60)"
+        },
+        {
+            "type": "Simple", "attack": "Melee", "name": "Javelin",
+            "cost": "5 sp", "damage": "1d6 (P)", "weight": 2, "subGroup": "Staff",
+            "properties": "Thrown(30/120)"
+        },
+        {
+            "type": "Simple", "attack": "Melee", "name": "Light hammer",
+            "cost": "2 gp", "damage": "1d4 (B)", "weight": 2, "subGroup": "Mace",
+            "properties": "Light, Thrown(20/60)"
+        },
+        {
+            "type": "Simple", "attack": "Melee", "name": "Mace",
+            "cost": "5 gp", "damage": "1d6 (B)", "weight": 4, "subGroup": "Mace",
+            "properties": ""
+        },
+        {
+            "type": "Simple", "attack": "Melee", "name": "Quarterstaff",
+            "cost": "2 sp", "damage": "1d6 (B)", "weight": 4, "subGroup": "Staff",
+            "properties": "Versatile(1d8)"
+        },
+        {
+            "type": "Simple", "attack": "Melee", "name": "Sickle",
+            "cost": "1 gp", "damage": "1d4 (S)", "weight": 2, "subGroup": "Knife",
+            "properties": "Light"
+        },
+        {
+            "type": "Simple", "attack": "Melee", "name": "Spear",
+            "cost": "1 gp", "damage": "1d6 (P)", "weight": 3, "subGroup": "Staff",
+            "properties": "Thrown(20/60), versatile(1d8)"
+        },
+        {
+            "type": "Simple", "attack": "Ranged", "name": "Crossbow, light",
+            "cost": "25 gp", "damage": "1d8 (P)", "weight": 5, "subGroup": "Ammo",
+            "properties": "Ammunition(80/320), Loading, Two-Handed"
+        },
+        {
+            "type": "Simple", "attack": "Ranged", "name": "Dart",
+            "cost": "5 cp", "damage": "1d4 (P)", "weight": 0.25, "subGroup": "Knife",
+            "properties": "Finesse, Thrown(20/60)"
+        },
+        {
+            "type": "Simple", "attack": "Ranged", "name": "Shortbow",
+            "cost": "25 gp", "damage": "1d6 (P)", "weight": 2, "subGroup": "Ammo",
+            "properties": "Ammunition(80/320), Two-Handed"
+        },
+        {
+            "type": "Simple", "attack": "Ranged", "name": "Sling",
+            "cost": "1 sp", "damage": "1d4 (B)", "weight": 0, "subGroup": "Ammo",
+            "properties": "Ammunition(30/120)"
+        },
+        {
+            "type": "Martial", "attack": "Melee", "name": "Battleaxe",
+            "cost": "10 gp", "damage": "1d8 (S)", "weight": 4, "subGroup": "Axe",
+            "properties": "Versatile(1d10)"
+        },
+        {
+            "type": "Martial", "attack": "Melee", "name": "Flail",
+            "cost": "10 gp", "damage": "1d8 (B)", "weight": 2, "subGroup": "Mace",
+            "properties": ""
+        },
+        {
+            "type": "Martial", "attack": "Melee", "name": "Glaive",
+            "cost": "20 gp", "damage": "1d10 (S)", "weight": 6, "subGroup": "Staff",
+            "properties": "Heavy, Reach, Two-Handed"
+        },
+        {
+            "type": "Martial", "attack": "Melee", "name": "Greataxe",
+            "cost": "30 gp", "damage": "1d12 (S)", "weight": 7, "subGroup": "Axe",
+            "properties": "Heavy, Two-Handed"
+        },
+        {
+            "type": "Martial", "attack": "Melee", "name": "Greatsword",
+            "cost": "50 gp", "damage": "2d6 (S)", "weight": 6,  "subGroup": "Sword",
+            "properties": "Heavy, Two-Handed"
+        },
+        {
+            "type": "Martial", "attack": "Melee", "name": "Halberd",
+            "cost": "20 gp", "damage": "1d10 (S)", "weight": 6, "subGroup": "Staff",
+            "properties": "Heavy, Reach, Two-Handed"
+        },
+        {
+            "type": "Martial", "attack": "Melee", "name": "Lance",
+            "cost": "10 gp", "damage": "1d12 (P)", "weight": 6, "subGroup": "Staff",
+            "properties": "Reach, Special", "special": "You have disadvantage when you use a lance to attack a target within 5 feet of you. Also, a lance requires two hands to wield when you aren’t mounted."
+        },
+        {
+            "type": "Martial", "attack": "Melee", "name": "Longsword",
+            "cost": "15 gp", "damage": "1d8 (S)", "weight": 3, "subGroup": "Sword",
+            "properties": "Versatile(1d10)"
+        },
+        {
+            "type": "Martial", "attack": "Melee", "name": "Maul",
+            "cost": "10 gp", "damage": "2d6 (B)", "weight": 10, "subGroup": "Mace",
+            "properties": "Heavy, Two-Handed"
+        },
+        {
+            "type": "Martial", "attack": "Melee", "name": "Morningstar",
+            "cost": "15 gp", "damage": "1d8 (B)", "weight": 4, "subGroup": "Mace",
+            "properties": ""
+        },
+        {
+            "type": "Martial", "attack": "Melee", "name": "Pike",
+            "cost": "5 gp", "damage": "1d10 (P)", "weight": 18, "subGroup": "Staff",
+            "properties": "Heavy, Reach, Two-Handed"
+        },
+        {
+            "type": "Martial", "attack": "Melee", "name": "Rapier",
+            "cost": "25 gp", "damage": "1d8 (P)", "weight": 2, "subGroup": "Sword",
+            "properties": "Finesse"
+        },
+        {
+            "type": "Martial", "attack": "Melee", "name": "Scimitar",
+            "cost": "25 gp", "damage": "1d6 (S)", "weight": 3, "subGroup": "Sword",
+            "properties": "Finesse, Light"
+        },
+        {
+            "type": "Martial", "attack": "Melee", "name": "Shortsword",
+            "cost": "10 gp", "damage": "1d6 (P)", "weight": 2, "subGroup": "Sword",
+            "properties": "Finesse, Light"
+        },
+        {
+            "type": "Martial", "attack": "Melee", "name": "Trident",
+            "cost": "5 gp", "damage": "1d6 (P)", "weight": 4, "subGroup": "Staff",
+            "properties": "Thrown(20/60), Versatile(1d8)"
+        },
+        {
+            "type": "Martial", "attack": "Melee", "name": "War pick",
+            "cost": "5 gp", "damage": "1d8 (P)", "weight": 2, "subGroup": "Mace",
+            "properties": ""
+        },
+        {
+            "type": "Martial", "attack": "Melee", "name": "Warhammer",
+            "cost": "15 gp", "damage": "1d8 (B)", "weight": 2, "subGroup": "Mace",
+            "properties": "Versatile(1d10)"
+        },
+        {
+            "type": "Martial", "attack": "Melee", "name": "Whip",
+            "cost": "2 gp", "damage": "1d4 (S)", "weight": 3, "subGroup": "Special",
+            "properties": "Finesse, Reach"
+        },
+        {
+            "type": "Martial", "attack": "Ranged", "name": "Blowgun",
+            "cost": "10 gp", "damage": "1 (P)", "weight": 1, "subGroup": "Ammo",
+            "properties": "Ammunition(25/100), Loading"
+        },
+        {
+            "type": "Martial", "attack": "Ranged", "name": "Crossbow, hand",
+            "cost": "75 gp", "damage": "1d6 (P)", "weight": 3, "subGroup": "Ammo",
+            "properties": "Ammunition(30/120), Light, Loading"
+        },
+        {
+            "type": "Martial", "attack": "Ranged", "name": "Crossbow, heavy",
+            "cost": "50 gp", "damage": "1d10 (P)", "weight": 18, "subGroup": "Ammo",
+            "properties": "Ammunition(100/400), Heavy, Loading, Two-Handed"
+        },
+        {
+            "type": "Martial", "attack": "Ranged", "name": "Longbow",
+            "cost": "50 gp", "damage": "1d8 (P)", "weight": 2, "subGroup": "Ammo",
+            "properties": "Ammunition (range 150/600), heavy, Two-Handed"
+        },
+        {
+            "type": "Martial", "attack": "Ranged", "name": "Net",
+            "cost": "1 gp", "damage": "-", "weight": 3,"subGroup": "Special",
+            "properties": "Special, Thrown(5/15)", "special": "Large or smaller creature hit by a net is restrained until it is freed. A net has no effect on creatures that are formless, or creatures that are Huge or larger. A creature can use its action to make a DC 10 Strength check, freeing itself or another creature within its reach on a success. Dealing 5 slashing damage to the net (AC 10) also frees the creature without harming it, ending the effect and destroying the net. When you use an action, bonus action, or reaction to attack with a net, you can make only one attack regardless of the number of attacks you can normally make."
+        }
+    ]
+}

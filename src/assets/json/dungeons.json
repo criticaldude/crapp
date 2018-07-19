@@ -1,0 +1,128 @@
+{
+    "locations" :[
+        {"description": "in a Building in a City", "rollForExotic": "FALSE"},
+        {"description": "on Catacombs or Sewers beneath a City", "rollForExotic": "FALSE"},
+        {"description": "beneath a Farmhouse", "rollForExotic": "FALSE"},
+        {"description": "beneath a Graveyard", "rollForExotic": "FALSE"},
+        {"description": "beneath a Ruined Castle", "rollForExotic": "FALSE"},
+        {"description": "beneath a Ruined City", "rollForExotic": "FALSE"},
+        {"description": "beneath a Temple", "rollForExotic": "FALSE"},
+        {"description": "in a Chasm", "rollForExotic": "FALSE"},
+        {"description": "in a Cliff Face ", "rollForExotic": "FALSE"},
+        {"description": "in a Deser", "rollForExotic": "FALSE"},
+        {"description": "in a Forest", "rollForExotic": "FALSE"},
+        {"description": "in a Glacier", "rollForExotic": "FALSE"},
+        {"description": "in a Gorge", "rollForExotic": "FALSE"},
+        {"description": "in a Jungle", "rollForExotic": "FALSE"},
+        {"description": "in a Mountain Pass", "rollForExotic": "FALSE"},
+        {"description": "in a Swamp", "rollForExotic": "FALSE"},
+        {"description": "beneath or on top of a Mesa", "rollForExotic": "FALSE"},
+        {"description": "in Sea Caves", "rollForExotic": "FALSE"},
+        {"description": "in several connected Mesas", "rollForExotic": "FALSE"},
+        {"description": "on a Mountain Peak", "rollForExotic": "FALSE"},
+        {"description": "on a Promontory", "rollForExotic": "FALSE"},
+        {"description": "on an Island", "rollForExotic": "FALSE"},
+        {"description": "Underwater", "rollForExotic": "FALSE"},
+        {"description": "Roll on the Exotic Location table ", "rollForExotic": "TRUE"}
+    ],
+    "exoticLocations": [
+        {"description": "among the Branches of a Tree"},
+        {"description": "around a Geyser"},
+        {"description": "behind a Waterfall"},
+        {"description": "Buried in an Avalanche"},
+        {"description": "Buried in a Sandstorm"},
+        {"description": "Buried in Volcanic Ash"},
+        {"description": "on a Castle or Structure Sunken in a Swamp"},
+        {"description": "on a Castle or Structure at the Bottom of a Sinkhole"},
+        {"description": "Floating on the Sea"},
+        {"description": "in a Meteorite"},
+        {"description": "on a Demiplane"},
+        {"description": "in a Pocket Dimension"},
+        {"description": "in an area devastated by a magical catastrophe"},
+        {"description": "on a Cloud"},
+        {"description": "in the Feywild"},
+        {"description": "in the Shadowfell"},
+        {"description": "On an Island in an Underground Sea"},
+        {"description": "in a volcano"},
+        {"description": "on the back of a Gargantuan living creature"},
+        {"description": "sealed inside a magical dome of force"},
+        {"description": "inside a Mordenkainen's magnificent mansion"}
+    ],
+    "creators": [
+        {"description": "a Beholder", "rollForReligious": "FALSE"},
+        {"description": "Cult or religious group", "rollForReligious": "FALSE"},
+        {"description": "Dwarves", "rollForReligious": "FALSE"},
+        {"description": "Elves", "rollForReligious": "FALSE"},
+        {"description": "Giants", "rollForReligious": "FALSE"},
+        {"description": "Hobgoblins", "rollForReligious": "FALSE"},
+        {"description": "Humans", "rollForReligious": "FALSE"},
+        {"description": "Kuo-toa", "rollForReligious": "FALSE"},
+        {"description": "a Lich", "rollForReligious": "FALSE"},
+        {"description": "Mindflayers", "rollForReligious": "FALSE"},
+        {"description": "Yuan-tis", "rollForReligious": "FALSE"},
+        {"description": "natural events", "rollForReligious": "FALSE"}
+    ],
+    "religiousGroups": [
+        {"description": "a Demon-worshiping cult"},
+        {"description": "a Devil-worshiping cult"},
+        {"description": "a Elemental Air cult"},
+        {"description": "a Elemental Earth cult"},
+        {"description": "a Elemental Fire cult"},
+        {"description": "a Elemental Water cult"},
+        {"description": "worshipers of an evil deity"},
+        {"description": "worshipers of a good deity"},
+        {"description": "worshipers of a neutral deity "}
+    ],
+    "purpouses": [
+        {
+            "purpose": "Death trap",
+            "description": "This dungeon is built to eliminate any creature that dares to enter it. A death trap might guard the treasure of an insane wizard, or it might be designed o lure adventurers to their demise for some nefarious purpose, such as to feed souls to a lich's phylactery. "
+        },
+        {
+            "purpose": "Lair",
+            "description": "A lair is a place where monsters live. Typical airs include ruins and caves"
+        },
+        {
+            "purpose": "Maze",
+            "description": " A maze is intended to deceive or confuse those who enter it. Some mazes are elaborate obstacles that protect treasure, while others are gauntlets for prisoners banished there to be hunted and devoured by the monsters within"
+        },
+        {
+            "purpose": "Mine",
+            "description": "An abandoned mine can quickly become infested with monsters, while miners who delve too deep can break through into the Underdark."
+        },
+        {
+            "purpose": "Planar gate",
+            "description": "Dungeons built around planar portals are often transformed by the planar energy seeping out through those portals. "
+        },
+        {
+            "purpose": "Stronghold",
+            "description": "A stronghold dungeon provides a secure base of operations for villains and monsters. It is ually ruled by a powerful individual, such as a wizard, vampire, or dragon, and it is larger and more complex ilian a simple lair."
+        },
+        {
+            "purpose": "Temple or shrine",
+            "description": "This dungeon is consecrated to a deity or other planar entity. The entity's worshipers control the dungeon and conduct their rites there. "
+        },
+        {
+            "purpose": "Tomb",
+            "description": "Tombs are magnets for treasure hunters, as well as monsters that hunger for the bones of the dead. "
+        },
+        {
+            "purpose": "Treasure vault",
+            "description": "Built to protect powerful magic items and great material wealth, treasure vault dungeons are heavily guarded by monsters and traps."
+        }
+    ],
+    "histories": [
+        {"event": "Abandoned by creators"},
+        {"event": "Abandoned due to plague"},
+        {"event": "Conquered by invaders"},
+        {"event": "Creators destroyed by attacking raiders"},
+        {"event": "Creators destroyed by discovery made within the site"},
+        {"event": "Creators destroyed by internal conflict"},
+        {"event": "Creators destroyed by natural disaster"},
+        {"event": "Location cursed by the gods and shunned"},
+        {"event": "Original creator still in control"},
+        {"event": "Overrun by planar creatures"},
+        {"event": "Site of a great miracle"}
+    ]
+    
+}

@@ -1,0 +1,17 @@
+{
+    "groups": [
+        {
+            "name": "References",
+            "items": [
+                {"name": "Poisons", "url": "#/app/poisons"}
+            ]
+        },
+        {
+            "name": "Random",
+            "items": [
+                {"name": "Potions", "url": "#/app/potions"},
+                {"name": "Dungeons", "url": "#/app/dungeons"}
+            ]
+        }
+    ]
+}

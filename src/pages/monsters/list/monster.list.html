@@ -1,0 +1,20 @@
+<ion-header>
+    <ion-navbar color="primary">
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Monsters</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding class="bg-image">  
+    <ion-list>
+      <ion-item style="background-color: rgba(255, 255, 255, 0)" *ngFor="let monster of monsters" (click)="open(monster)">
+        <h2 style="float: left">
+            <strong *ngIf="monster.name">{{monster.name}} {{"("+monster.creatureName+")"}}</strong>
+            <strong *ngIf="!monster.name">{{monster.creatureName}}</strong>
+        </h2> 
+        <h3><span style="float: right">CR {{monster.cr}}</span></h3>
+      </ion-item>
+    </ion-list>
+  </ion-content>

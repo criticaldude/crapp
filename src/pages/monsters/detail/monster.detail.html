@@ -1,0 +1,87 @@
+<ion-view title="Status Detail">
+    <ion-content>
+        <div class="card padding">
+            <h3>
+                <strong ng-show="monster.name">{{monster.name}} {{"("+monster.creatureName+")"}})</strong>
+                <strong ng-show="!monster.name">{{monster.creatureName}}</strong>
+            </h3>
+            <div class="italic">{{monster.basic}}</div>
+            <hr>
+            <p><strong>Armor Class </strong>{{monster.ac}}</p>
+            <p><strong>Hit Points </strong>{{monster.hp}} {{monster.hitDices}}</p>
+            <p><strong>Speed </strong>{{monster.spd}}</p>
+            <hr>
+            <div class="row">
+                <div class="col" style="text-align: center">
+                    <strong>STR</strong><br>
+                    <span style="font-size: 0.9em">{{monster.str}}</span>
+                </div>
+                <div class="col" style="text-align: center">
+                    <strong>DEX</strong><br>
+                    <span style="font-size: 0.9em">{{monster.dex}}</span>
+                </div>
+                <div class="col" style="text-align: center">
+                    <strong>CON</strong><br>
+                    <span style="font-size: 0.9em">{{monster.con}}</span>
+                </div>
+                <div class="col" style="text-align: center">
+                    <strong>INT</strong><br>
+                    <span style="font-size: 0.9em">{{monster.int}}</span>
+                </div>
+                <div class="col" style="text-align: center">
+                    <strong>WIS</strong><br>
+                    <span style="font-size: 0.9em">{{monster.wis}}</span>
+                </div>
+                <div class="col" style="text-align: center">
+                    <strong>CHA</strong><br>
+                    <span style="font-size: 0.9em">{{monster.cha}}</span>
+                </div>
+            </div>
+            <hr>
+            <p ng-show="monster.savingThrows"><strong>Saving Throws </strong>{{monster.savingThrows}}</p>
+            <p ng-show="monster.skills"><strong>Skills </strong>{{monster.skills}}</p>
+            <p ng-show="monster.senses"><strong>Senses </strong>{{monster.senses}}</p>
+            <p ng-show="monster.resistances"><strong>Resistances </strong>{{monster.resistances}}</p>
+            <p ng-show="monster.immunities"><strong>Immunities </strong>{{monster.immunities}}</p>
+            <p><strong>Challange </strong>{{monster.cr + " (" + monster.xp + " XP)"}}</p>
+            
+            <div ng-show="monster.specialAbilities">
+                <hr>
+                <h4>Special Abilities</h4>
+                <p ng-repeat="sa in monster.specialAbilities" style="margin-bottom: 10px;">
+                    <strong>{{sa.name}}. </strong>{{sa.description}}
+                </p>
+                <div ng-show="monster.preparedSpells">
+                    The {{monster.name}} has the following wizard spells prepared:
+                    <ul>
+                        <li ng-repeat="ps in monster.preparedSpells">{{ps.level}}: <span class="italic   ">{{ps.spells}}</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div ng-show="monster.actions">
+                <hr>
+                <h4>Actions</h4>
+                <p ng-repeat="action in monster.actions" style="margin-bottom: 10px;">
+                    <strong>{{action.name}}. </strong>{{action.description}}
+                </p>
+            </div>
+            
+            <div ng-show="monster.reactions">
+                <hr>
+                <h4>Reactions</h4>
+                <p ng-repeat="action in monster.reactions" style="margin-bottom: 10px;">
+                    <strong>{{action.name}}. </strong>{{action.description}}
+                </p>
+            </div>
+            
+            <div ng-show="monster.info">
+                <hr>
+                <h4>Information</h4>
+                <p ng-repeat="p in monster.info" ng-bind-html="p" style="margin-bottom: 10px;"></p>
+            </div>
+            
+            
+        </div>
+    </ion-content>
+</ion-view>

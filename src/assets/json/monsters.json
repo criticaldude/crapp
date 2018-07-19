@@ -1,0 +1,649 @@
+[
+    {
+        "creatureName": "Acolyte", "basic": "Medium humanoid (any race), any alignment",
+        "ac": 10, "hp": 9, "hitDices": "(2d8)", "spd": "30 ft.",
+        "str": "10(+0)", "dex": "10(+0)", "con": "10(+0)", 
+        "int": "10(+0)", "wis": "14(+2)", "cha": "10(+0)",
+        "skills": "Medicine +4, Religion +2",
+        "perception": 10,
+        "senses": "passive Perseption 10",
+        "cr": "1/4",
+        "xp": 50,
+        "specialAbilities": [
+            { "name": "Spellcasting", "description": "The acolyte is a 1st-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks)." }
+        ],
+        "preparedSpells": [
+            {"level": "Cantrips (at will)", "spells": "light, sacred flame, thaumaturgy"},
+            {"level": "1st level (3 slots)", "spells": "bless, cure wounds, sanctuary"}
+        ],
+        "actions": [
+            {"name": "Club", "description": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage."}
+        ],
+        "info": [
+            "<b>Acolytes</b> are junior members of a clergy, usually answerable to a priest. They perform a variety of functions in a temple and are granted minor spellcasting power by their deities."
+        ],
+        "equipment": [
+            { "type": "weapon", "name": "Club" }
+        ]
+    },
+    
+    {
+        "creatureName": "Priest", "basic": "Medium humanoid (any race), any alignment",
+        "ac": 13, "hp": 27, "hitDices": "(5d8+5)", "spd": "25ft.",
+        "str": "10 (+0)", "dex": "10 (+0)", "con": "12 (+1)",
+        "int": "13 (+1)", "wis": "16 (+3)", "cha": "13 (+1)",
+        "skills": "Medicine +7, Persuasion +3, Religion +4",
+        "perception": 13,
+        "senses": "passive Perception 13",
+        "cr": "2",
+        "xp": 450,
+        "specialAbilities": [
+            {"name": "Divine Eminence", "description": "As a bonus action, the priest can expend a spell slot to cause its melee weapon attacks to magically deal an extra 10 (3d6) radiant damage to a target on a hit . This benefit lasts until the end of the turn . If the priest expends a spell slot of 2nd level or higher, the extra damage increases by ld6 for each level above 1st."},
+            {"name": "Spellcasting", "description": "The priest is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell  save DC 13 , +5 to hit with spell attacks)."}
+        ],
+        "preparedSpells": [
+            {"level": "Can trips (at will)", "spells": "fight, sacred flame , thaumaturgy"},
+            {"level": "1st level (4 slots)", "spells": "cure wounds, guiding bolt, sanctuary"},
+            {"level": "2nd level (3 slots)", "spells": "lesser restoration, spiritual weapon"},
+            {"level": "3rd level (2 slots)", "spells": "dispel magic, spirit guardians"}
+        ],
+        "actions": [
+            {"name": "Mace", "description": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target . Hit: 3 (ld6) bludgeoning damage."}
+        ],
+        "info": [
+            "<b>Priests</b> bring the teachings of their gods to the common folk. They are the spiritual leaders of temples and shrines and often hold positions of influence in their communities. Evil priests might work openly under a tyrant, or they might be the leaders of religious sects hidden in the shadows of good society, overseeing depraved rites.",
+            "A priest typically has one or more acolytes to help with religious ceremonies and other sacred duties."
+        ],
+        "equipment": [
+            { "type": "armor", "name": "Chain shirt" },
+            { "type": "weapon", "name": "Mace" }
+        ]
+    },
+    
+    {
+        "creatureName": "Mage", "basic": "Medium humanoid (any race), any alignment",
+        "ac": 12, "hp": 40, "hitDices": "(9d8)", "spd": "30ft.",
+        "str": "9 (-1)", "dex": "14 (+2)", "con": "11 (+0)",
+        "int": "17 (+3)", "wis": "12 (+1)", "cha": "11 (+0)",
+        "savingThrows": "lnt +6, Wis +4",
+        "skills": "Arcana +6, History +6",
+        "perception": 11,
+        "senses": "passive Perception 11",
+        "cr": "6",
+        "xp": 2300,
+        "specialAbilities": [
+            {"name": "Spellcasting", "description": "The mage is a 9th-level spe llcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks)."}
+        ],
+        "preparedSpells": [
+            {"level": "Cantrips (at will)", "spells": "fire bolt, light, mage hand, prestidigitation"},
+            {"level": "1st level (4 slots)", "spells": "detect magic, mage armor, magic missile, shield"},
+            {"level": "2nd level (3 slots)", "spells": "misty step, suggestion"},
+            {"level": "3rd level (3 slots)", "spells": "counterspell,fireball,jly"},
+            {"level": "4th level (3 slots)", "spells": "greater invisibility, ice storm"},
+            {"level": "5th level (1 slot)", "spells": "cone of cold"}
+        ],
+        "actions": [
+            {"name": "Dagger", "description": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20f60 ft. , one target. Hit: 4 (1d4+2) piercing damage."}
+        ],
+        "info": [
+            "<b>Mages</b> spend their lives in the study and practice of magic. Good-aligned mages offer counsel to nobles and others in power, while evil mages dwell in isolated sites to perform unspeakable experiments without interference."
+        ],
+        "equipment": [
+            { "type": "weapon", "name": "Dagger" }
+        ]
+    },
+    
+    {
+        "creatureName": "Archmage", "basic": "Medium humanoid (any race), any alignment",
+        "ac": 12, "hp": 99, "hitDices": "(18d8+18)", "spd": "30ft.",
+        "str": "10 (+0)", "dex": "14 (+2)", "con": "12 (+1)",
+        "int": "20 (+5)", "wis": "15 (+2)", "cha": "16 (+3)",
+        "savingThrows": "lnt +9, Wis +6",
+        "skills": "Arcana +13, History +13",
+        "perception": 12,
+        "senses": "passive Perception 12",
+        "resistances": "damage from spells; non magical bludgeoning, piercing, and slashing (from stoneskin)",
+        "cr": "12",
+        "xp": 8400,
+        "specialAbilities": [
+            {"name": "Magic Resistance", "description": "The arch mage has advantage on saving throws against spells and other magical effects."},
+            {"name": "Spellcasting", "description": "The archmage is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). The arch mage can cast disguise self and invisibility at will."}
+        ],
+        "preparedSpells": [
+            {"level": "Cantrips (at will)", "spells": "fire bolt, light, mage hand, prestidigitation, shocking grasp"},
+            {"level": "1st level (4 slots)", "spells": "detect magic, identify, mage armor, magic missile"},
+            {"level": "2nd level (3 slots)", "spells": "detect thoughts, mirror image, misty step"},
+            {"level": "3rd level (3 slots)", "spells": "counterspeii,Jly, lightning bolt"},
+            {"level": "4th level (3 slots)", "spells": "banishment, fire shield, stoneskin"},
+            {"level": "5th level (3 slots)", "spells": "cone of cold, scrying, wall of force"},
+            {"level": "6th level (1 slot)", "spells": "globe of invulnerability"},
+            {"level": "7th level (l slot)", "spells": "teleport"},
+            {"level": "8th level (l slot)", "spells": "mind blank1"},
+            {"level": "9th level (l slot)", "spells": "time stop"}
+        ],
+        "actions": [
+            {"name": "Dagger", "description": "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4+2) piercing damage."}
+        ],
+        "info": [
+            "<b>Archmages</b> are powerful (and usually quite old) spellcasters dedicated to the study of the arcane arts. Benevolent ones counsel kings and queens, while evil ones rule as tyrants and pursue lichdom. Those who are neither good nor evil sequester themselves in remote towers to practice their magic without interruption. An archmage typically has one or more apprentice mages, and an archmage's abode has numerous magical wards and guardians to discourage interlopers"
+        ],
+        "equipment": [
+            { "type": "weapon", "name": "Dagger" }
+        ]
+    },
+    
+    {
+        "creatureName": "Bandit", "basic": "Medium humanoid (any race), any non-lawful alignment",
+        "ac": 12, "hp": 11, "hitDices": "(2d8+2)", "spd": "30ft.",
+        "str": "11 (+0)", "dex": "12 (+1)", "con": "12 (+1)",
+        "int": "10 (+0)", "wis": "10 (+0)", "cha": "10 (+0)",
+        "perception": 10,
+        "senses": "passive Perception 10",
+        "cr": "1/8",
+        "xp": 25,
+        "actions": [
+            {"name": "Scimitar", "description": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) slashing damage."},
+            {"name": "Light Crossbow", "description": "Ranged Weapon Attack: +3 to hit, range 80 ft./320ft., one target. Hit: 5 (1d8 + 1) piercing damage."}
+        ],
+        "info": [
+            "<b>Bandits</b> rove in gangs and are sometimes led by thugs, veterans , or spellcasters. Not all bandits a re evil. Oppression, drought, disease, or famine can often drive otherwise honest folk to a life of banditry.",
+            "<b>Pirates</b> are bandits of the high seas. They might be freebooters interested only in treasure and murder, or they might be privateers sanctioned by the crown to attack and plunder an enemy nation's vessels."
+        ],
+        "equipment": [
+            { "type": "armor", "name": "Leather Armor" },
+            { "type": "weapon", "name": "Scimitar" },
+            { "type": "weapon", "name": "Light Crossbow" }
+        ]
+    },
+    
+    {
+        "creatureName": "Bandit Captain", "basic": "Medium humanoid (any race), any non·lawful alignment",
+        "ac": 15, "hp": 65, "hitDices": "(10d8+20)", "spd": "30 ft.",
+        "str": "15 (+2)", "dex": "16 (+3)", "con": "14 (+2)",
+        "int": "14 (+2)", "wis": "11 (+0)", "cha": "14 (+2)",
+        "savingThrows": "Str +4, Dex +5, Wis +2",
+        "skills": "Athletics +4, Deception +4",
+        "perception": 10,
+        "senses": "passive Perception 10",
+        "cr": "2",
+        "xp": 450,
+        "actions": [
+            {"name": "Multiattack", "description": "The captain makes three melee attacks: two with its scimitar and one with its dagger. Or the captain makes two ranged attacks with its daggers."},
+            {"name": "Scimitar", "description": "Melee Weapon Attack: +5 to hit, reac h 5 ft., one target. Hit: 6 (ld6 + 3) slash ing damage."},
+            {"name": "Dagger", "description": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d4 + 3) piercing damage."}
+        ],
+        "reactions": [
+            {"name": "Parry", "description": "The captain adds 2 to its AC against one melee attack that would hit it. To do so, the captain must see the attacker and be wielding a melee weapon."}
+        ],
+        "info": [
+            "It takes a strong personality, ruthless cunning, and a silver tongue to keep a gang of bandits in line. The <b>bandit captain</b> has these qua lities in spades.",
+            "In addition to managing a crew of selfish malcontents, the <b>pirate captain</b> is a variation of the bandit captain, with a ship to protect and command. To keep the crew in line, the captain must mete out rewards and punishment on a regular basis.",
+            "More than treasure, a bandit captain or <b>pirate captain</b> craves infamy. A prisoner who appeals to the captain's vanity or ego is more likely to be treated fairly than a prisoner who does not or claims not to know anything of the captain's colorful reputation."
+        ],
+        "equipment": [
+            { "type": "armor", "name": "Studded leather" },
+            { "type": "weapon", "name": "Scimitar" },
+            { "type": "weapon", "name": "Dagger" }
+        ]
+    },
+    
+    {
+        "creatureName": "Berseker", "basic": "Medium humanoid (any race), any chaotic alignment",
+        "ac": 13, "hp": 67, "hitDices": "(9d8+27)", "spd": "30 ft.",
+        "str": "16 (+3)", "dex": "12 (+1)", "con": "17 (+3)",
+        "int": "9 (-1)", "wis": "11 (+0)", "cha": "9 (-1)",
+        "perception": 10,
+        "senses": "passive Pe rcept ion 10",
+        "cr": "2",
+        "xp": 450,
+        "specialAbilities": [
+            {"name": "Reckless", "description": "At the start of its turn, the berserker can gain advantage on all melee weapon attack ro lls during that turn, but attack rolls against it have advantage until the start of its next turn."}
+        ],
+        "actions": [
+            {"name": "Greataxe", "description": "Melee Weapon Attack: +5 to hit, reach 5 ft. , one target. Hit: 9 (1d12 + 3) slash ing damage."}
+        ],
+        "info": [
+            "Hailing from uncivilized lands, unpredictable <b>berserkers</b> come together in war parties and seek conflict wherever they can find it."
+        ],
+        "equipment": [
+            { "type": "armor", "name": "Hide armor" },
+            { "type": "weapon", "name": "Greataxe" }
+        ]
+    },
+    
+    {
+        "creatureName": "Cultist", "basic": "Medium humanoid (any race), any non-good alignment",
+        "ac": 12, "hp": 9, "hitDices": "(2d8)", "spd": "30ft.",
+        "str": "11 (+0)", "dex": "12 (+1)", "con": "10 (+0)",
+        "int": "10 (+0)", "wis": "11 (+0)", "cha": "10 (+0)",
+        "skills": "Deception +2, Religion +2",
+        "perception": 10,
+        "senses": "passive Perception 10",
+        "cr": "1/8",
+        "xp": 25,
+        "specialAbilities": [
+            {"name": "Dark Devotion", "description": "The cultist has advantage on saving throws against being charmed or frightened."}
+        ],
+        "actions": [
+            {"name": "Scimitar", "description": "Melee Weapon Attack: +3 to hit, reach 5 ft. , one creature. Hit: 4 (1d6 + 1) slashing damage."}
+        ],
+        "info": [
+            "<b>Cultists</b> swear allegiance to dark powers such as elemental princes, demon lords, or a rchdevils. Most conceal their loyalties to avoid being ostracized, imprisoned, or executed for their beliefs. Un like evil acolytes, cultists often show signs of insanity in their beliefs and practices."
+        ],
+        "equipment": [
+            { "type": "armor", "name": "Leather armor" },
+            { "type": "weapon", "name": "Scimitar" }
+        ]
+    },
+    
+    {
+        "creatureName": "Cult Fanatic", "basic": "Medium humanoid (any race), any non-good alignment",
+        "ac": 13, "hp": 33, "hitDices": "(6d8+6)", "spd": "30ft.",
+        "str": "11 (+0)", "dex": "14 (+2)", "con": "12 (+1)",
+        "int": "10 (+0)", "wis": "13 (+1)", "cha": "14 (+2)",
+        "skills": "Deception +4, Persuas ion +4, Religion +2",
+        "perception": 11,
+        "senses": "passive Pe rception 11",
+        "cr": "2",
+        "xp": 450,
+        "specialAbilities": [
+            {"name": "Dark Devotion", "description": "The cultist has advantage on saving throws against being charmed or frightened."},
+            {"name": "Spellcasting", "description": "The fanatic is a 4th-level spellcaster. Its spell casting ability is Wisdom (spell save DC 11, +3 to hit with spell attacks)."}
+        ],
+        "preparedSpells": [
+            {"level": "Cantrips (at will)", "spells": "light, sacred flam e, thaumaturgy"},
+            {"level": "1st level (4 slots)", "spells": "command, inflict wounds, shield of faith"},
+            {"level": "2nd level (3 slots)", "spells": "hold person, spiritual weapon"}
+        ],
+        "actions": [
+            {"name": "Multiattack", "description": "The fan atic makes two melee attacks."},
+            {"name": "Dagger", "description": "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one creature. Hit: 4 (1d4 + 2) piercing damage."} 
+        ],
+        "info": [
+            "<b>Fanatics</b> are often part of a cult's leadership, using their charisma and dogma to influence and prey on those of weak will. Most are interested in personal power above all else."
+        ],
+        "equipment": [
+            { "type": "armor", "name": "Leather armor" },
+            { "type": "weapon", "name": "Dagger" }
+        ]
+    },
+    
+    {
+        "creatureName": "Guard", "basic": "Medium humanoid (any race), any alignment",
+        "ac": 16, "hp": 11, "hitDices": "(2d8+2)", "spd": "30ft.",
+        "str": "13 (+1)", "dex": "12 (+1)", "con": "12 (+1)",
+        "int": "10 (+0)", "wis": "11 (+0)", "cha": "10 (+0)",
+        "skills": "Perception +2",
+        "perception": 12,
+        "senses": "passive Perception 12",
+        "cr": "1/8",
+        "xp": 25,
+        "actions": [
+            {"name": "Spear", "description": "Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20f60 ft., one target. Hit: 4 (1d6+1) piercing damage."}
+        ],
+        "info": [
+            "<b>Guards</b> include members of a city watch, sentries in a citadel or fortified town, and the bodyguards of merchants and nobles."
+        ],
+        "equipment": [
+            { "type": "armor", "name": "Scale mail" },
+            { "type": "weapon", "name": "Spear" }
+        ]
+    },
+    
+    {
+        "creatureName": "Knight", "basic": "Medium humanoid (any race), any alignment",
+        "ac": 18, "hp": 52, "hitDices": "(8d8+16)", "spd": "30ft.",
+        "str": "16 (+3)", "dex": "11 (+0)", "con": "14 (+2)",
+        "int": "11 (+0)", "wis": "11 (+0)", "cha": "15 (+2)",
+        "savingThrows": "Con +4, Wis +2",
+        "perception": 10,
+        "senses": "passive Perception 10",
+        "cr": "3",
+        "xp": 700,
+        "specialAbilities": [
+            {"name": "Brave", "description": "The knight has advantage on saving throws against being frightened."}
+        ],
+        "actions": [
+            {"name": "Multiattack", "description": "The knight makes two melee attacks."},
+            {"name": "Greatsword", "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage."},
+            {"name": "Heavy Crossbow", "description": "Ranged Weapon Attack: +2 to hit, range 100f400 ft., one target. Hit: 5 (ld10) piercing damage."},
+            {"name": "Leadership (Recharges after a Short or Long Rest)", "description": "For 1 minute, the kn ight can utter a special command or warning whenever a non hostile creature that it can see within 30 feet of it makes an attack roll or a saving throw. The creatu.re can add a d4 to its roll provided it can hear and understand the knight. A creature can benefit from only one Leadership die at a time. This effect ends if the knight is incapacitated."}
+        ],
+        "reactions": [
+            {"name": "Parry", "description": "The knight adds 2 to its AC against one melee attack that would hit it. To do so, the knight must see the attacker and be wielding a melee weapon."}
+        ],
+        "info": [
+            "<b>Knights</b> are warriors who pledge service to rulers, religious orders, and noble causes. A knight's alignment determines the extent to which a pledge is honored. Whether undertaking a quest or patrolling a realm a knight often travels with an entourage that includes squires and hirelings who are commoners."
+        ],
+        "equipment": [
+            { "type": "armor", "name": "Plate" },
+            { "type": "weapon", "name": "Greatsword" },
+            { "type": "weapon", "name": "Heavy Crossbow" }
+        ]
+    },
+    
+    {
+        "creatureName": "Thug", "basic": "Medium humanoid (any race), any non-good alignment",
+        "ac": 11, "hp": 32, "hitDices": "(5d8+10)", "spd": "30 ft.",
+        "str": "15 (+2)", "dex": "11 (+0)", "con": "14 (+2)",
+        "int": "10 (+0)", "wis": "10 (+0)", "cha": "11 (+0)",
+        "skills": "Intimidation +2",
+        "perception": 10,
+        "senses": "passive Pe rception 10",
+        "cr": "1/2",
+        "xp": 100,
+        "specialAbilities": [
+            {"name": "Pack Tactics", "description": "The thug has advantage on an attack roll against a creature if at least one of the thug's allies is within 5 feet of the creature and the ally is n't incapacitated."}
+        ],
+        "preparedSpells": [
+            {"level": "Multiattack", "spells": "The thug makes two melee attacks"},
+            {"level": "Mace", "spells": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6+2) bludgeoning damage."},
+            {"level": "Heavy Crossbow", "spells": "Ranged Weapon Attack: +2 to hit, range 100/400 ft., one target. Hit: 5 (1d10) piercing damage."}
+        ],
+        "info": [
+            "<b>Thugs</b> are ruthless enforcers skilled at intimidation and violence. They work for money and have few scruples."
+        ],
+        "equipment": [
+            { "type": "armor", "name": "Leather armor" },
+            { "type": "weapon", "name": "Mace" },
+            { "type": "weapon", "name": "Heavy Crossbow" }
+        ]
+    },
+    
+    {
+        "creatureName": "Veteran", "basic": "Medium humanoid (any race), any alignment",
+        "ac": 17, "hp": 58, "hitDices": "(9d8+18)", "spd": "30ft.",
+        "str": "16 (+3)", "dex": "13 (+1)", "con": "14 (+2)",
+        "int": "10 (+0)", "wis": "11 (+0)", "cha": "10 (+0)",
+        "skills": "Athletics +5, Pe rce pt ion +2",
+        "perception": 12,
+        "senses": "passive Perception 12",
+        "cr": "3",
+        "xp": 700,
+        "actions": [
+            {"name": "Multiattack", "description": "The veteran makes two longsword attacks. If it has a shortsword drawn, it can also make a shortsword attack."},
+            {"name": "Longsword", "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8+3) s lashing damage, or 8 (1d10+3) slashing damage if used with two hands."},
+            {"name": "Shortsword", "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one ta rget. Hit: 6 (1d6+3) piercing damage."},
+            {"name": "Heavy Crossbow", "description": "Ranged Weapon Attack: +3 to hit, range 100/400 ft. , one target. Hit: 5 (1d10) pie rcing damage."}
+        ],
+        "info": [
+            "<b>Veterans</b> are professional fighters that take up arms for pay or to protect something they believe in or value. Their ranks include soldiers retired from long service and warriors who never served anyone but themselves."
+        ],
+        "gear": [
+            { "type": "armor", "name": "Splint" },
+            { "type": "weapon", "name": "Longsword" },
+            { "type": "weapon", "name": "Shortsword" },
+            { "type": "weapon", "name": "Heavy Crossbow" }
+        ]
+    },
+    
+    {
+        "creatureName": "Troll", "basic": "Large giant, chaotic evil",
+        "ac": 15, "hp": 84, "hitDices": "(8d10+40)", "spd": "30ft.",
+        "str": "18 (+4)", "dex": "13 (+1)", "con": "20 (+5)",
+        "int": "7 (-2)", "wis": "9 (-1)", "cha": "7 (-2)",
+        "skills": "Perception +1",
+        "perception": 12,
+        "senses": "passive Perception 12",
+        "cr": "5",
+        "xp": 1800,
+        "specialAbilities": [
+            { "name": "Keen Smell", "description": "The troll has adevntage on Wisdom (Perception) checks that rely on smell." },
+            { "name": "Regeneration", "description": "The troll regains 10 hit points at the start of its turn. If the troll takes acid or fire damage, this trait doesn´t function at the start of the troll´s next turn. The troll dies only id it starts its turn with 0 hit points and doesn´t regenerate." }
+        ],
+        "actions": [
+            {"name": "Multiattack", "description": "The veteran makes three attacks: one with its bite and two with its claws."},
+            {"name": "Bite", "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d6+4) piercing damage."},
+            {"name": "Claw", "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one ta rget. Hit: 11 (2d6+4) slashing damage."}
+        ],
+        "info": [
+            "Born with horrific appetites, troll eat anything they can catch and devour. They have no society to speak of, but they serve as mercenaries to orcs, ogres, ettins, hags, and giants. As payment, trolls demand food and trausre. Trolls are dificult to control, however, doing a they please even when working with more powerful creatures."
+        ]
+    },
+    
+    {
+        "name": "Krispin", "creatureName": "Troll", "basic": "Large giant, chaotic evil",
+        "ac": 15, "hp": 84, "hitDices": "(8d10+40)", "spd": "30ft.",
+        "str": "18 (+4)", "dex": "13 (+1)", "con": "20 (+5)",
+        "int": "7 (-2)", "wis": "9 (-1)", "cha": "7 (-2)",
+        "skills": "Perception +1",
+        "perception": 12,
+        "senses": "passive Perception 12",
+        "cr": "6",
+        "xp": 2300,
+        "specialAbilities": [
+            { "name": "Keen Smell", "description": "The troll has adevntage on Wisdom (Perception) checks that rely on smell." },
+            { "name": "Regeneration", "description": "The troll regains 10 hit points at the start of its turn. If the troll takes acid or fire damage, this trait doesn´t function at the start of the troll´s next turn. The troll dies only id it starts its turn with 0 hit points and doesn´t regenerate." },
+            { "name": "Claw Rend", "description": "If the troll hit a target with two or more claw attacks, the troll rends the target, dealing an extra 2d6 slashing damage." }
+        ],
+        "actions": [
+            {"name": "Multiattack", "description": "The veteran makes five attacks: one with its bite and four with its claws."},
+            {"name": "Bite", "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d6+4) piercing damage."},
+            {"name": "Claw", "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one ta rget. Hit: 11 (2d6+4) slashing damage."}
+        ],
+        "info": [
+            "Born with horrific appetites, troll eat anything they can catch and devour. They have no society to speak of, but they serve as mercenaries to orcs, ogres, ettins, hags, and giants. As payment, trolls demand food and trausre. Trolls are dificult to control, however, doing a they please even when working with more powerful creatures.",
+            "This four armed troll is a demon whisper and a fanatical hunter of big game: nothing pleases him so much as bringing blood and bones back to feed his abursh drakes, or the delightful terror of his more intelligent victims. Trespin cares mostly about combat and mayhem, but he has found that serving the cult makes combat and mayhem more likely. He´s very devoted to Talis the White,and he serves the Cult of the Dragon enthusiasyically. His four arms just make it easier to claw, rip, and shred anything too slow to escape his reach. He terrifies the kobolds and the human servants of the lodge."
+        ]
+    },
+    
+    {
+        "name": "Talis the White", "creatureName": "Dragonfang", "basic": "Medium humanoid (half-elf), lawful evil",
+        "ac": 18, "hp": 58, "hitDices": "(9d8+18)", "spd": "30ft.",
+        "str": "14 (+2)", "dex": "12 (+1)", "con": "14 (+2)",
+        "int": "10 (+0)", "wis": "16 (+3)", "cha": "16 (+3)",
+        "savingThrows": [
+            { "ability": "Wis", "bonus": "+6" },
+            { "ability": "Cha", "bonus": "+5" }
+        ],
+        "skills": "Perception +6, Deception +6, Insight +6, Persuasion +6",
+        "perception": 16,
+        "senses": "Passive Perception 16, Darkvision 60ft.",
+        "cr": "5",
+        "xp": 1800,
+        "specialAbilities": [
+            { "name": "Fey Ancestry", "description": "Talis has adevantages on saving throws against being charmed, and magic can´t put her to sleep." },
+            { "name": "Winter Strike (3/Day)", "description": "Once per turn, when Talis hits with a melee attack, she can expend a use of this trait to deal an extra 9 (2d8) cold damage." },
+            { "name": "Spellcasting", "description": "Talis is a 9th-level spellcatser. Its spellcasting ability is Wisdom (spell save DC 14, +6 to hit with spell attacks)." }
+        ],
+        "preparedSpells": [
+            {"level": "Cantrips (at will)", "spells": "guidance, resistance, thaumaturgy"},
+            {"level": "1st level (4 slots)", "spells": "command, cure wounds, healing word, inflict wounds"},
+            {"level": "2nd level (3 slots)", "spells": "blindness/deafness, lesser restoration, spiritual weapon (spear)"},
+            {"level": "3rd level (3 slots)", "spells": "dispel magic, mass healing word, sending"},
+            {"level": "4th level (3 slots)", "spells": "death word, freedom of movement"},
+            {"level": "5th level (1 slot)", "spells": "insect plague"}
+        ],
+        "actions": [
+            {"name": "Spear", "description": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or ranged 20ft./60ft., one target. Hit: 6 (1d6+2) piercing damage."},
+            {"name": "Ray of Frost", "description": "With the Wand of Winter, she can use 1 charge to execute a Ranged Weapon Attack: +6 to hit, reach 5 ft. or ranged 60ft., one target. Hit: 9 (2d8) cold damage."},
+            {"name": "Sleet Storm", "description": "With the Wand of Winter, she can use 3 charge to cast a Sleet Storm"},
+            {"name": "Ice Strom", "description": "With the Wand of Winter, she can use 4 charge to cast a Ice Storm"}
+        ],
+        "lenguages": [
+            "Common", "Draconic", "Elvish", "Infernal"
+        ],
+        "info": [
+            ""
+        ],
+        "gear": [
+            { "type": "armor", "name": "+1 Scale Mail" },
+            { "type": "armor", "name": "Shield" },
+            { "type": "weapon", "name": "Wand of Winter" },
+            { "type": "weapon", "name": "Spear" }
+        ]
+    },
+    {
+        "creatureName": "Dragonclaw", "basic": "Medium humanoid (any race), neutral evil",
+        "ac": 14, "hp": 16, "hitDices": "(3d8+3)", "spd": "30 ft.",
+        "str": "9(-1)", "dex": "16(+3)", "con": "13(+1)", 
+        "int": "11(+0)", "wis": "10(+0)", "cha": "12(+1)",
+        "savingThrows": [
+            { "ability": "Wis", "bonus": "+2" }
+        ],
+        "skills": "Dception +3, Stealth +5",
+        "perception": 10,
+        "senses": "passive Perseption 10",
+        "cr": "1",
+        "xp": 200,
+        "specialAbilities": [
+            { "name": "Dragon Fanatic", "description": "The dragonclaw has advantage on saving throws against being charmed or frightened. While the dragonclaw can see a dragon or higer-ranking Cult of the Dragon cultist friendly to it, the dragonclaw ignores the effects of being charmed or frightened." },
+            { "name": "Fanatic Advantage", "description": "Once per turn, if the dragonclaw makes a weapon attack with advantage on the attack roll and hits, the target takes an extra 7 (2d6) dagame." },
+            { "name": "Pack Tactics", "description": "The Dragonclar has advantage on an attack roll against a creature if at least one of the dragonclaw´s allies is within 5 feet of the crature and the ally isn´t incapacitied." }
+        ],
+        "actions": [
+            {"name": "Multiattack", "description": "The dragonclaw attacks twice with its scimitar."},
+            {"name": "Scimitar", "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6+3) slashing damage."}
+        ],
+        "equipment": [
+            { "type": "armor", "name": "Leather armor" },
+            { "type": "weapon", "name": "Scimitar" }
+        ]
+    },
+    {
+        "creatureName": "Dragonwing", "basic": "Medium humanoid (any race), neutral evil",
+        "ac": 14, "hp": 33, "hitDices": "(6d8+6)", "spd": "30 ft.",
+        "str": "11(+0)", "dex": "16(+3)", "con": "13(+1)", 
+        "int": "11(+0)", "wis": "11(+0)", "cha": "13(+1)",
+        "savingThrows": [
+            { "ability": "Wis", "bonus": "+2" }
+        ],
+        "skills": "Dception +3, Stealth +5",
+        "perception": 10,
+        "senses": "passive Perseption 10",
+        "resistances": "One of the following: acid, cold, fire, ligthining, or poison",
+        "cr": "2",
+        "xp": 450,
+        "specialAbilities": [
+            { "name": "Dragon Fanatic", "description": "The dragonwing has advantage on saving throws against being charmed or frightened. While the dragonwing can see a dragon or higer-ranking Cult of the Dragon cultist friendly to it, the dragonwing ignores the effects of being charmed or frightened." },
+            { "name": "Fanatic Advantage", "description": "Once per turn, if the dragonwing makes a weapon attack with advantage on the attack roll and hits, the target takes an extra 7 (2d6) dagame." },
+            { "name": "Pack Tactics", "description": "The dragonwing has advantage on an attack roll against a creature if at least one of the dragonwing´s allies is within 5 feet of the crature and the ally isn´t incapacitied." },
+            { "name": "Limited Flight", "description": "The dragonwing can use a bonus action to gain a fly speed of 30 feet until the end if its turn." }
+        ],
+        "actions": [
+            {"name": "Multiattack", "description": "The dragonwing attacks twice with its scimitar."},
+            {"name": "Scimitar", "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6+3) slashing damage plus 3 (1d6) damage of the type to which the cultist has damage resistance."}
+        ],
+        "equipment": [
+            { "type": "armor", "name": "Leather armor" },
+            { "type": "weapon", "name": "Scimitar" }
+        ]
+    },
+    {
+        "creatureName": "Dragonfang", "basic": "Medium humanoid (any race), neutral evil",
+        "ac": 15, "hp": 78, "hitDices": "(12d8+24)", "spd": "30 ft.",
+        "str": "11(+0)", "dex": "16(+3)", "con": "14(+2)", 
+        "int": "12(+1)", "wis": "12(+1)", "cha": "14(+2)",
+        "savingThrows": [
+            { "ability": "Wis", "bonus": "+3" }
+        ],
+        "skills": "Dception +4, Stealth +5",
+        "perception": 11,
+        "senses": "passive Perseption 11",
+        "resistances": "One of the following: acid, cold, fire, ligthining, or poison",
+        "cr": "5",
+        "xp": 1800,
+        "specialAbilities": [
+            { "name": "Dragon Fanatic", "description": "The dragonfang has advantage on saving throws against being charmed or frightened. While the dragonfang can see a dragon or higer-ranking Cult of the Dragon cultist friendly to it, the dragonfang ignores the effects of being charmed or frightened." },
+            { "name": "Fanatic Advantage", "description": "Once per turn, if the dragonfang makes a weapon attack with advantage on the attack roll and hits, the target takes an extra 10 (3d6) dagame." },
+            { "name": "Pack Tactics", "description": "The dragonfang has advantage on an attack roll against a creature if at least one of the dragonfang´s allies is within 5 feet of the crature and the ally isn´t incapacitied." },
+            { "name": "Limited Flight", "description": "The dragonfang can use a bonus action to gain a fly speed of 30 feet until the end if its turn." }
+        ],
+        "actions": [
+            {"name": "Multiattack", "description": "The dragonfang attacks twice with its shortsword."},
+            {"name": "Shortsword", "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6+3) slashing damage plus 7 (2d6) damage of the type to which the cultist has damage resistance."},
+            {"name": "Orb of Dragon Breath (2/Day)", "description": "Ranged Spell Attack: +5 to hit, range 90 ft., one target. Hit: 22 (5d8) type to which the cultist has damage resistance."}
+        ],
+        "equipment": [
+            { "type": "armor", "name": "Studded leather armor" },
+            { "type": "weapon", "name": "Shortsword" },
+            { "type": "weapon", "name": "Orb of Dragon Breath" }
+        ]
+    },
+    {
+        "creatureName": "Dragonsoul", "basic": "Medium humanoid (any race), neutral evil",
+        "ac": 16, "hp": 110, "hitDices": "(17d8+34)", "spd": "30 ft.",
+        "str": "11(+0)", "dex": "18(+4)", "con": "14(+2)", 
+        "int": "13(+1)", "wis": "12(+1)", "cha": "16(+3)",
+        "savingThrows": [
+            { "ability": "Wis", "bonus": "+4" }
+        ],
+        "skills": "Dception +6, Stealth +7",
+        "perception": 11,
+        "senses": "passive Perseption 11",
+        "resistances": "One of the following: acid, cold, fire, ligthining, or poison",
+        "cr": "7",
+        "xp": 2900,
+        "specialAbilities": [
+            { "name": "Dragon Fanatic", "description": "The dragonsoul has advantage on saving throws against being charmed or frightened. While the dragonsoul can see a dragon or higer-ranking Cult of the Dragon cultist friendly to it, the dragonsoul ignores the effects of being charmed or frightened." },
+            { "name": "Fanatic Advantage", "description": "Once per turn, if the dragonsoul makes a weapon attack with advantage on the attack roll and hits, the target takes an extra 10 (3d6) dagame." },
+            { "name": "Pack Tactics", "description": "The Dragonclar has advantage on an attack roll against a creature if at least one of the dragonsoul´s allies is within 5 feet of the crature and the ally isn´t incapacitied." },
+            { "name": "Limited Flight", "description": "The dragonsoul can use a bonus action to gain a fly speed of 30 feet until the end if its turn." }
+        ],
+        "actions": [
+            {"name": "Multiattack", "description": "The dragonsoul attacks twice with its shortsword."},
+            {"name": "Shortsword", "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d6+3) slashing damage plus 10 (3d6) damage of the type to which the cultist has damage resistance."},
+            {"name": "Orb of Dragon´s Breath (2/Day)", "description": "Ranged Spell Attack: +7 to hit, range 90 ft., one target. Hit: 27 (6d8) type to which the cultist has damage resistance."}
+        ],
+        "equipment": [
+            { "type": "armor", "name": "Studded leather armor" },
+            { "type": "weapon", "name": "Shortsword" },
+            { "type": "weapon", "name": "Orb of Dragon´s Breath" }
+        ]
+    },
+    {
+        "creatureName": "Ambursh Drake", "basic": "Medium dragon unaligned",
+        "ac": 13, "hp": 22, "hitDices": "(4d6+8)", "spd": "30 ft.",
+        "str": "14(+1)", "dex": "15(+2)", "con": "14(+2)", 
+        "int": "4(-3)", "wis": "11(+0)", "cha": "6(-2)",
+        "skills": "Perception +4, Stealth +4",
+        "perception": 14,
+        "senses": "passive Perseption 14, Darkvision 60 ft.",
+        "resistances": "Poison",
+        "cr": "1/2",
+        "xp": 100,
+        "specialAbilities": [
+            { "name": "Pack Tactics", "description": "The ambursh drake has advantage on an attack roll against a creature if at least one of the dragonclaw´s allies is within 5 feet of the crature and the ally isn´t incapacitied." },
+            { "name": "Surprise Attack", "description": "If the ambursh darek surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 7 (2d6) damage from the attack." }
+        ],
+        "actions": [
+            {"name": "Bite", "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d6+1) piercing damage."}
+        ]
+    },
+    {
+        "creatureName": "Guard Drake", "basic": "Medium dragon unaligned",
+        "ac": 14, "hp": 52, "hitDices": "(7d8+21)", "spd": "30 ft.",
+        "str": "16(+3)", "dex": "11(+1)", "con": "16(+3)", 
+        "int": "4(-3)", "wis": "10(+0)", "cha": "7(-2)",
+        "skills": "Perception +2",
+        "perception": 10,
+        "senses": "passive Perseption 10",
+        "resistances": "Ligthining",
+        "cr": "2",
+        "xp": 450,
+        "actions": [
+            {"name": "Multiattack", "description": "The guard drake makes two attacks: one with its bite and one with its tile."},
+            {"name": "Bite", "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8+3) piercing damage."},
+            {"name": "Tail", "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6+3) piercing damage."}
+        ]
+    },
+    {
+        "creatureName": "Kobold", "basic": "Small humanoid (kobold), lawful wvil",
+        "ac": 12, "hp": 5, "hitDices": "(2d6-2)", "spd": "30 ft.",
+        "str": "7(-2)", "dex": "15(+2)", "con": "9(-1)", 
+        "int": "8(-1)", "wis": "7(-2)", "cha": "8(-1)",
+        "perception": 8,
+        "senses": "passive Perseption 8",
+        "cr": "1/8",
+        "xp": 25,
+        "specialAbilities": [
+            { "name": "Pack Tactics", "description": "The kobold has advantage on an attack roll against a creature if at least one of the kobold´s allies is within 5 feet of the crature and the ally isn´t incapacitied." },
+            { "name": "Sunlight Sensitivity", "description": "While in sunlight, the kobold has disadvantage on attack rolls, as well as on wisdom (Perseption) checks that rely on sight." }
+        ],
+        "actions": [
+            {"name": "Dagger", "description": "The guard drake makes two attacks: one with its bite and one with its tile."},
+            {"name": "Dagger", "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4+2) piercing damage."},
+            {"name": "Sling", "description": "Ranged Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4+2) piercing damage."}
+        ]
+    }
+]
