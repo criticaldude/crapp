@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { Storage } from '@ionic/storage';
+import { MonsterDetailPage } from '../detail/monster.detail';
 import { MonsterProvider, Monster } from '../../../providers/monsterProvider';
 
 @Component({
@@ -9,16 +9,20 @@ import { MonsterProvider, Monster } from '../../../providers/monsterProvider';
 })
 export class MonsterListPage {
 
-    //public monsters: Array<Monster> = [];
+    public monsters: Array<Monster> = [];
 
-    public monsters = [];
-
-    constructor(private provider:MonsterProvider){
-        this.refreshMonsterList();
+    constructor(private provider:MonsterProvider, private navCtrl:NavController){
+        console.log(provider);
+        this.getMonsters();
     }
 
-    public refreshMonsterList(){
-        this.provider.getAll().then(res => this.monsters = res);
+    public getMonsters(ev?: any){
+        const val = ev ? ev.target.value : undefined;
+        this.provider.getList(val).then(res => this.monsters = res);
+    }
+
+    public open(id:number){
+        this.navCtrl.push(MonsterDetailPage, {monsterId: id})
     }
 
 }

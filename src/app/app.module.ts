@@ -16,6 +16,7 @@ import { CampaignListPage } from '../pages/campaigns/list/campaign.list';
 import { CampaignDetailPage } from '../pages/campaigns/detail/campaign.detail';
 import { CampaignCharactersPage } from '../pages/characters/campaigns/campaign.characters';
 import { MonsterListPage } from '../pages/monsters/list/monster.list';
+import { MonsterDetailPage } from '../pages/monsters/detail/monster.detail';
 
 //Providerss
 import { CampaignProvider } from '../providers/campaignProvider';
@@ -29,7 +30,8 @@ const pages = [
   CampaignListPage,
   CampaignDetailPage,
   CampaignCharactersPage,
-  MonsterListPage
+  MonsterListPage,
+  MonsterDetailPage
 ]
 
 @NgModule({

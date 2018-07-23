@@ -6,29 +6,46 @@ export class MonsterProvider{
 
     constructor(private http: HttpClient){}
 
-    public getAll():Promise<Array<Monster>>{
+    private getAll():Promise<Array<Monster>>{
         return new Promise(resolve => {
             this.http.get('assets/json/monsters.json').toPromise()
             .then((res: Array<Monster>) => {
-                console.log("monster list",res);
                 resolve(res);
             });
         });
     }
 
-    /*
-    public getCampaign(id: Number): Promise<Campaign>{
+    public getList(searchVal:string):Promise<Array<Monster>>{
         return new Promise(resolve => {
-            this.map.forEach(campaign => {
-                if(campaign.id === id) resolve(campaign);
+            this.getAll().then((res: Array<Monster>) => {
+                
+                // if the value is an empty string don't filter the items
+                if (searchVal && searchVal.trim() != '') {
+                    res = res.filter((monster) => {
+                        let name: string = monster.name+monster.creatureName;
+                        return ( name.toLowerCase().indexOf(searchVal.toLowerCase()) > -1);
+                    });
+                }
+                resolve(res);
             });
-            resolve(undefined);
         });
     }
-    */
+
+    public get(id:number):Promise<Monster>{
+        return new Promise(resolve => {
+            this.getAll().then((res: Array<Monster>) => {
+                let list = res.filter((item) => {
+                    return (item.id === id);
+                });
+                resolve(list ? list[0] : undefined);
+            });
+        });
+    }
 }
 
 export interface Monster{
+    id: number,
+    name?:string, 
     creatureName: string, //Acolyte 
     basic: string, //"Medium humanoid (any race), any alignment"
     ac: number, //10 
@@ -59,6 +76,12 @@ export interface Monster{
         }
     ],
     actions: [
+        {
+            name: string, //"Cantrips (at will)" 
+            description: string //"Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage."
+        }
+    ],
+    reactions: [
         {
             name: string, //"Cantrips (at will)" 
             description: string //"Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage."
